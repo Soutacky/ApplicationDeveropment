@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalenderActivity">
+
+    <Button
+        android:id="@+id/Sunday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/Monday1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YYMM" />
+
+    <Button
+        android:id="@+id/Monday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday1"
+        app:layout_constraintTop_toTopOf="@id/Sunday1"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday1"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday1"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday1"
+        app:layout_constraintTop_toTopOf="@id/Monday1"
+        app:layout_constraintBottom_toBottomOf="@id/Monday1"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday1"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday1"
+        app:layout_constraintTop_toTopOf="@id/Tuesday1"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday1"
+        app:layout_constraintEnd_toStartOf="@id/Thursday1"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday1"
+        app:layout_constraintTop_toTopOf="@id/Wednesday1"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday1"
+        app:layout_constraintEnd_toStartOf="@id/Friday1"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday1"
+        app:layout_constraintTop_toTopOf="@id/Thursday1"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday1"
+        app:layout_constraintEnd_toStartOf="@id/Saturday1"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday1"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday1"
+        app:layout_constraintTop_toTopOf="@id/Friday1" />
+
+
+    <Button
+        android:id="@+id/Sunday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@id/Monday2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Monday1" />
+
+    <Button
+        android:id="@+id/Monday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday2"
+        app:layout_constraintTop_toTopOf="@id/Sunday2"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday2"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday2"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday2"
+        app:layout_constraintTop_toTopOf="@id/Monday2"
+        app:layout_constraintBottom_toBottomOf="@id/Monday2"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday2"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday2"
+        app:layout_constraintTop_toTopOf="@id/Tuesday2"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday2"
+        app:layout_constraintEnd_toStartOf="@id/Thursday2"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday2"
+        app:layout_constraintTop_toTopOf="@id/Wednesday2"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday2"
+        app:layout_constraintEnd_toStartOf="@id/Friday2"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday2"
+        app:layout_constraintTop_toTopOf="@id/Thursday2"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday2"
+        app:layout_constraintEnd_toStartOf="@id/Saturday2"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday2"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday2"
+        app:layout_constraintTop_toTopOf="@id/Friday2" />
+
+
+    <Button
+        android:id="@+id/Sunday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@id/Monday3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Monday2" />
+
+    <Button
+        android:id="@+id/Monday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday3"
+        app:layout_constraintTop_toTopOf="@id/Sunday3"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday3"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday3"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday3"
+        app:layout_constraintTop_toTopOf="@id/Monday3"
+        app:layout_constraintBottom_toBottomOf="@id/Monday3"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday3"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday3"
+        app:layout_constraintTop_toTopOf="@id/Tuesday3"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday3"
+        app:layout_constraintEnd_toStartOf="@id/Thursday3"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday3"
+        app:layout_constraintTop_toTopOf="@id/Wednesday3"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday3"
+        app:layout_constraintEnd_toStartOf="@id/Friday3"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday3"
+        app:layout_constraintTop_toTopOf="@id/Thursday3"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday3"
+        app:layout_constraintEnd_toStartOf="@id/Saturday3"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday3"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday3"
+        app:layout_constraintTop_toTopOf="@id/Friday3" />
+
+
+    <Button
+        android:id="@+id/Sunday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@id/Monday4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Monday3" />
+
+    <Button
+        android:id="@+id/Monday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday4"
+        app:layout_constraintTop_toTopOf="@id/Sunday4"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday4"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday4"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday4"
+        app:layout_constraintTop_toTopOf="@id/Monday4"
+        app:layout_constraintBottom_toBottomOf="@id/Monday4"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday4"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday4"
+        app:layout_constraintTop_toTopOf="@id/Tuesday4"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday4"
+        app:layout_constraintEnd_toStartOf="@id/Thursday4"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday4"
+        app:layout_constraintTop_toTopOf="@id/Wednesday4"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday4"
+        app:layout_constraintEnd_toStartOf="@id/Friday4"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday4"
+        app:layout_constraintTop_toTopOf="@id/Thursday4"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday4"
+        app:layout_constraintEnd_toStartOf="@id/Saturday4"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday4"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday4"
+        app:layout_constraintTop_toTopOf="@id/Friday4" />
+
+
+    <Button
+        android:id="@+id/Sunday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@id/Monday5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Monday4" />
+
+    <Button
+        android:id="@+id/Monday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday5"
+        app:layout_constraintTop_toTopOf="@id/Sunday5"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday5"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday5"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday5"
+        app:layout_constraintTop_toTopOf="@id/Monday5"
+        app:layout_constraintBottom_toBottomOf="@id/Monday5"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday5"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday5"
+        app:layout_constraintTop_toTopOf="@id/Tuesday5"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday5"
+        app:layout_constraintEnd_toStartOf="@id/Thursday5"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday5"
+        app:layout_constraintTop_toTopOf="@id/Wednesday5"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday5"
+        app:layout_constraintEnd_toStartOf="@id/Friday5"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday5"
+        app:layout_constraintTop_toTopOf="@id/Thursday5"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday5"
+        app:layout_constraintEnd_toStartOf="@id/Saturday5"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday5"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday5"
+        app:layout_constraintTop_toTopOf="@id/Friday5" />
+
+
+    <Button
+        android:id="@+id/Sunday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@id/Monday6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Monday5" />
+
+    <Button
+        android:id="@+id/Monday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Sunday6"
+        app:layout_constraintTop_toTopOf="@id/Sunday6"
+        app:layout_constraintBottom_toBottomOf="@id/Sunday6"
+        app:layout_constraintEnd_toStartOf="@id/Tuesday6"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/Tuesday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Monday6"
+        app:layout_constraintTop_toTopOf="@id/Monday6"
+        app:layout_constraintBottom_toBottomOf="@id/Monday6"
+        app:layout_constraintEnd_toStartOf="@id/Wednesday6"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/Wednesday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Tuesday6"
+        app:layout_constraintTop_toTopOf="@id/Tuesday6"
+        app:layout_constraintBottom_toBottomOf="@id/Tuesday6"
+        app:layout_constraintEnd_toStartOf="@id/Thursday6"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/Thursday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Wednesday6"
+        app:layout_constraintTop_toTopOf="@id/Wednesday6"
+        app:layout_constraintBottom_toBottomOf="@id/Wednesday6"
+        app:layout_constraintEnd_toStartOf="@id/Friday6"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Friday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@id/Thursday6"
+        app:layout_constraintTop_toTopOf="@id/Thursday6"
+        app:layout_constraintBottom_toBottomOf="@id/Thursday6"
+        app:layout_constraintEnd_toStartOf="@id/Saturday6"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/Saturday6"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/Friday6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Friday6"
+        app:layout_constraintTop_toTopOf="@id/Friday6" />
+
+    <TextView
+        android:id="@+id/YYMM"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="2023年9月"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/Sunday1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
