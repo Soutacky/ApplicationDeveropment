@@ -16,6 +16,18 @@
             android:name=".CalenderActivity"
             android:exported="false" />
         <activity
+            android:name=".FirstMonsterSettingActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".FirstSettingActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" >
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
