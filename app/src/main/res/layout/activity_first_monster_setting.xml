@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MonsterSettingTitle"
-        app:srcCompat="@drawable/ic_android_green" />
+        app:srcCompat="@drawable/ic_android" />
 
     <EditText
         android:id="@+id/monsterNameEdit"
