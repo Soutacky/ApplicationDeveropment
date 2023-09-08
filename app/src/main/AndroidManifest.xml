@@ -13,21 +13,23 @@
         android:theme="@style/Theme.ApplicationDeveropment"
         tools:targetApi="31">
         <activity
+            android:name=".SleepcalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SportscalenderActivity"
+            android:exported="false" />
+        <activity
             android:name=".TopActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".DayCalenderActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CalenderActivity"
             android:exported="false" />
         <activity
             android:name=".FirstMonsterSettingActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".FirstSettingActivity"
             android:exported="true">
@@ -39,8 +41,7 @@
         </activity>
         <activity
             android:name=".SettingActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
