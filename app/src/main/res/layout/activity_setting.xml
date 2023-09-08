@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        app:layout_constraintTop_toBottomOf="@id/voiceTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/okButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintTop_toBottomOf="@id/voiceTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancelButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/settingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Setting"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="Name:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/settingTitle" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/settingTitle" />
+
+    <TextView
+        android:id="@+id/ageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="Age:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ageEdit"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
+
+    <EditText
+        android:id="@+id/ageEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/nameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/bgmTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="BGM:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bgmSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/ageTitle" />
+
+    <TextView
+        android:id="@+id/soundTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="SOUND:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/bgmTitle"
+        app:layout_constraintTop_toBottomOf="@+id/bgmTitle" />
+
+    <TextView
+        android:id="@+id/voiceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="VOICE:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/soundTitle"
+        app:layout_constraintTop_toBottomOf="@+id/soundTitle" />
+
+    <SeekBar
+        android:id="@+id/bgmSeekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@id/bgmTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bgmTitle" />
+
+    <SeekBar
+        android:id="@+id/soundSeekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="@id/bgmSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/soundTitle" />
+
+    <SeekBar
+        android:id="@+id/voiceSeekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="@id/bgmSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/voiceTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
