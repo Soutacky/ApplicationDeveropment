@@ -38,5 +38,10 @@ public class CalenderActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
+        binding.Sunday1.setOnClickListener(view -> {
+            var intent = new Intent(this, DayCalenderActivity.class);
+            startActivity(intent);
+        });
     }
 }

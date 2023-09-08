@@ -18,7 +18,8 @@ public class FirstSettingActivity extends AppCompatActivity {
 
         binding.okButton.setOnClickListener(view -> {
             var intent = new Intent(this, FirstMonsterSettingActivity.class);
-            intent.putExtra("text", binding.firstNameEdit.getText().toString());
+//            var intent2 = new Intent(this, TopActivity.class);
+//            intent2.putExtra("text", binding.firstNameEdit.getText().toString());
             startActivity(intent);
             finish();
         });
