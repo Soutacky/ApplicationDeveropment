@@ -2,6 +2,7 @@ package jp.ac.meijou.android.applicationdeveropment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -16,5 +17,25 @@ public class TopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityTopBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.imageButton3.setOnClickListener(view -> {
+            var intent = new Intent(this, SettingActivity.class);
+            startActivity(intent);
+        });
+
+        binding.mealButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+        });
+
+        binding.sleepButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+        });
+
+        binding.exerciseButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+        });
     }
 }
