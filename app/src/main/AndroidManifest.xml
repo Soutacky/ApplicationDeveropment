@@ -32,8 +32,7 @@
             android:exported="true" />
         <activity
             android:name=".FirstSettingActivity"
-            android:exported="true" />
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,5 +52,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
