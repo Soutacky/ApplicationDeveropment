@@ -2,13 +2,41 @@ package jp.ac.meijou.android.applicationdeveropment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-public class CalenderActivity extends AppCompatActivity {
+import jp.ac.meijou.android.applicationdeveropment.databinding.ActivityCalenderBinding;
 
+public class CalenderActivity extends AppCompatActivity {
+    private ActivityCalenderBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calender);
+        binding = ActivityCalenderBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.homeButton.setOnClickListener(view -> {
+            var intent = new Intent(this, TopActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        binding.mealButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        binding.sleepButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        binding.exerciseButton.setOnClickListener(view -> {
+            var intent = new Intent(this, CalenderActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }
