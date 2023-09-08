@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".DayCalenderActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="９月８日"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="43dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
