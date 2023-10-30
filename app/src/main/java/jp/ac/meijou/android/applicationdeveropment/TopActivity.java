@@ -2,7 +2,9 @@ package jp.ac.meijou.android.applicationdeveropment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 
@@ -42,5 +44,12 @@ public class TopActivity extends AppCompatActivity {
             var intent = new Intent(this, CalenderActivity.class);
             startActivity(intent);
         });
+
+        //データの引き出し
+        SharedPreferences preferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        String name = preferences.getString("name", "error");
+        String monsterName = preferences.getString("monsterName", "error");
+        binding.playerNameView.setText(name);
+        binding.monsterNameView.setText(monsterName);
     }
 }
