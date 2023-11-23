@@ -49,7 +49,16 @@ public class TopActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
         String name = preferences.getString("name", "error");
         String monsterName = preferences.getString("monsterName", "error");
+        int currentImage = preferences.getInt("currentImage", 1);
         binding.playerNameView.setText(name);
         binding.monsterNameView.setText(monsterName);
+
+        if (currentImage == 1) {
+            binding.monsterImageView.setImageResource(R.drawable.ic_android_green);
+        } else if (currentImage == 2) {
+            binding.monsterImageView.setImageResource(R.drawable.ic_android);
+        } else {
+            binding.monsterImageView.setImageResource(R.drawable.ic_launcher_foreground);
+        }
     }
 }

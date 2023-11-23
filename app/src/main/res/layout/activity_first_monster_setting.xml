@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/monsterView"
         android:layout_width="213dp"
         android:layout_height="334dp"
         android:layout_marginTop="44dp"
@@ -36,8 +36,8 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/nameTitle"/>
+        app:layout_constraintStart_toEndOf="@+id/nameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/monsterView" />
 
     <TextView
         android:id="@+id/nameTitle"
@@ -49,7 +49,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/monsterNameEdit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/monsterView" />
 
     <Button
         android:id="@+id/okButton"
@@ -61,5 +61,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
 
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="308dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="65dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/MonsterSettingTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:text="MonsterSetting"-->
+<!--        android:textSize="34sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.256"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/monsterView"-->
+<!--        android:layout_width="213dp"-->
+<!--        android:layout_height="334dp"-->
+<!--        android:layout_marginTop="44dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/MonsterSettingTitle"-->
+<!--        app:srcCompat="@drawable/ic_android" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/monsterNameEdit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monsterView"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nameTitle"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nameTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:text="MonsterName"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/monsterNameEdit"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monsterView" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/okButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="OK"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nameTitle" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
