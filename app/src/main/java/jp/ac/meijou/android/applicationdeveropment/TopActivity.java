@@ -33,16 +33,19 @@ public class TopActivity extends AppCompatActivity {
         binding.mealButton.setOnClickListener(view -> {
             var intent = new Intent(this, CalenderActivity.class);
             startActivity(intent);
+            finish();
         });
 
         binding.sleepButton.setOnClickListener(view -> {
             var intent = new Intent(this, CalenderActivity.class);
             startActivity(intent);
+            finish();
         });
 
         binding.exerciseButton.setOnClickListener(view -> {
             var intent = new Intent(this, CalenderActivity.class);
             startActivity(intent);
+            finish();
         });
 
         //データの引き出し
