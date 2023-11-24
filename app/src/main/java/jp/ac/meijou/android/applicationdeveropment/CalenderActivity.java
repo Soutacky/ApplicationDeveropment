@@ -96,12 +96,23 @@ public class CalenderActivity extends AppCompatActivity {
         String other = preferences.getString("other"+ stringYear +stringMonth + stringDay,"");
 
         schedules.add("朝食\n"+
-                stringStartHour+":"+stringStartMinute+"\n"+
-                "から\n"+
-                stringEndHour+":"+stringEndMinute+"\n"+
+                stringStartHour+"時"+stringStartMinute+"分"+
+                "～"+
+                stringEndHour+"時"+stringEndMinute+"分\n\n"+
+                "備考\n"+
                 other);
-        schedules.add("昼食");
-        schedules.add("夕食");
+        schedules.add("昼食"+
+                stringStartHour+"時"+stringStartMinute+"分"+
+                "～"+
+                stringEndHour+"時"+stringEndMinute+"分\n\n"+
+                "備考\n"+
+                other);
+        schedules.add("夕食"+
+                stringStartHour+"時"+stringStartMinute+"分"+
+                "～"+
+                stringEndHour+"時"+stringEndMinute+"分\n\n"+
+                "備考\n"+
+                other);
         return schedules;
     }
 

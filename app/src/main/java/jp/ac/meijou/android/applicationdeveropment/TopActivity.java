@@ -8,6 +8,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 import jp.ac.meijou.android.applicationdeveropment.databinding.ActivityTopBinding;
@@ -22,8 +25,8 @@ public class TopActivity extends AppCompatActivity {
         binding = ActivityTopBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-//        Optional.ofNullable(getIntent().getStringExtra("text"))
-//                .ifPresent(text -> binding.playerNameView.setText(text));
+        binding.dateView.setText(getCurrentDate());
+
 
         binding.imageButton3.setOnClickListener(view -> {
             var intent = new Intent(this, SettingActivity.class);
@@ -63,5 +66,16 @@ public class TopActivity extends AppCompatActivity {
         } else {
             binding.monsterImageView.setImageResource(R.drawable.ic_launcher_foreground);
         }
+    }
+    public static String getCurrentDate() {
+        LocalDate currentDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd");
+        DayOfWeek dayOfWeek = currentDate.getDayOfWeek();
+        String[] japaneseDayOfWeek = {
+                "日", "月", "火", "水", "木", "金", "土"
+        };
+
+        String yobi = japaneseDayOfWeek[dayOfWeek.getValue() - 1];
+        return currentDate.format(formatter) + "(" + yobi + ")";
     }
 }
