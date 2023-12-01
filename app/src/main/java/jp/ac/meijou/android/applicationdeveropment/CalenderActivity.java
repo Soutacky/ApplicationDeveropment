@@ -20,6 +20,7 @@ public class CalenderActivity extends AppCompatActivity {
     private ActivityCalenderBinding binding;
     private ScheduleAdapter scheduleAdapter;
     private static final int REQUEST_CODE_EDIT_SCHEDULE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,33 +86,33 @@ public class CalenderActivity extends AppCompatActivity {
         String stringMonth = Integer.valueOf(selectedMonth).toString();
         String stringDay = Integer.valueOf(selectedDay).toString();
 
-        int startHour = preferences.getInt("StartHour"+ stringYear + stringMonth + stringDay,0);
-        int startMinute = preferences.getInt("StartMinute"+ stringYear +stringMonth + stringDay,0);
-        int endHour = preferences.getInt("EndHour"+ stringYear + stringMonth + stringDay,0);
-        int endMinute = preferences.getInt("EndMinute"+ stringYear +stringMonth + stringDay,0);
+        int startHour = preferences.getInt("StartHour" + stringYear + stringMonth + stringDay, 0);
+        int startMinute = preferences.getInt("StartMinute" + stringYear + stringMonth + stringDay, 0);
+        int endHour = preferences.getInt("EndHour" + stringYear + stringMonth + stringDay, 0);
+        int endMinute = preferences.getInt("EndMinute" + stringYear + stringMonth + stringDay, 0);
         String stringStartHour = Integer.valueOf(startHour).toString();
         String stringStartMinute = Integer.valueOf(startMinute).toString();
         String stringEndHour = Integer.valueOf(endHour).toString();
         String stringEndMinute = Integer.valueOf(endMinute).toString();
-        String other = preferences.getString("other"+ stringYear +stringMonth + stringDay,"");
+        String other = preferences.getString("other" + stringYear + stringMonth + stringDay, "");
 
-        schedules.add("朝食\n"+
-                stringStartHour+"時"+stringStartMinute+"分"+
-                "～"+
-                stringEndHour+"時"+stringEndMinute+"分\n\n"+
-                "備考\n"+
+        schedules.add("朝食\n" +
+                stringStartHour + "時" + stringStartMinute + "分" +
+                "～" +
+                stringEndHour + "時" + stringEndMinute + "分\n\n" +
+                "備考\n" +
                 other);
-        schedules.add("昼食"+
-                stringStartHour+"時"+stringStartMinute+"分"+
-                "～"+
-                stringEndHour+"時"+stringEndMinute+"分\n\n"+
-                "備考\n"+
+        schedules.add("昼食" +
+                stringStartHour + "時" + stringStartMinute + "分" +
+                "～" +
+                stringEndHour + "時" + stringEndMinute + "分\n\n" +
+                "備考\n" +
                 other);
-        schedules.add("夕食"+
-                stringStartHour+"時"+stringStartMinute+"分"+
-                "～"+
-                stringEndHour+"時"+stringEndMinute+"分\n\n"+
-                "備考\n"+
+        schedules.add("夕食" +
+                stringStartHour + "時" + stringStartMinute + "分" +
+                "～" +
+                stringEndHour + "時" + stringEndMinute + "分\n\n" +
+                "備考\n" +
                 other);
         return schedules;
     }
