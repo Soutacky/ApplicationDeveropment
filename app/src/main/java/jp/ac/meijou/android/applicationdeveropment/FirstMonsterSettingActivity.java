@@ -40,14 +40,14 @@ public class FirstMonsterSettingActivity extends AppCompatActivity {
                 binding.monsterView.setImageResource(R.drawable.ic_android_green);
                 currentImage = 1;
             } else {
-                binding.monsterView.setImageResource(R.drawable.ic_android);
+                binding.monsterView.setImageResource(R.drawable.monster1);
                 currentImage = 2;
             }
         });
 
         binding.buttonRight.setOnClickListener(view -> {
             if (currentImage == 1) {
-                binding.monsterView.setImageResource(R.drawable.ic_android);
+                binding.monsterView.setImageResource(R.drawable.monster1);
                 currentImage = 2;
             } else if (currentImage == 2) {
                 binding.monsterView.setImageResource(R.drawable.ic_launcher_foreground);

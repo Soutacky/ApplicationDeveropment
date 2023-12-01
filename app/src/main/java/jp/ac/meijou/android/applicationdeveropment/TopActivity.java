@@ -62,7 +62,7 @@ public class TopActivity extends AppCompatActivity {
         if (currentImage == 1) {
             binding.monsterImageView.setImageResource(R.drawable.ic_android_green);
         } else if (currentImage == 2) {
-            binding.monsterImageView.setImageResource(R.drawable.ic_android);
+            binding.monsterImageView.setImageResource(R.drawable.monster1);
         } else {
             binding.monsterImageView.setImageResource(R.drawable.ic_launcher_foreground);
         }
